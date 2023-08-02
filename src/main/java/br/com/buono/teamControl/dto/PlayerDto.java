@@ -5,9 +5,12 @@ import lombok.Data;
 import java.util.Date;
 
 @Data
-public class ClientDto {
+public class PlayerDto {
 
-    private Integer id;
+    private Long id;
     private String name;
     private Date dateOfBirth;
+    private String length;
+    private Double weight;
+
 }

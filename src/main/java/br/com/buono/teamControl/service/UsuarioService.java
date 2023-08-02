@@ -5,10 +5,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
 public interface UsuarioService {
 
     public boolean userValidate(Long id);
+
+    public Long save(Usuario user);
 
     public List<Usuario> usersPendents();
 
