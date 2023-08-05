@@ -20,4 +20,14 @@ public class TeamImpl implements TeamService {
     public List<Team> findAll(TeamDto teamDto) {
         return null;
     }
+
+    @Override
+    public Long save(TeamDto teamDto) {
+        Team team = Team.builder().
+                teamName(teamDto.getName()).
+                city(teamDto.getCity()).
+                foundationDate(teamDto.getFoundationDate()).
+                modality(teamDto.getModality()).build();
+        return teamRepository.save(team).getId();
+    }
 }

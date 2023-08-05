@@ -14,6 +14,7 @@ import static jakarta.persistence.GenerationType.SEQUENCE;
 @Getter
 @AllArgsConstructor
 @Entity
+@Builder
 public class Usuario {
 
     @Id

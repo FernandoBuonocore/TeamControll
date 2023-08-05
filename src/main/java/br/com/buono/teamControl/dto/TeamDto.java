@@ -1,5 +1,10 @@
 package br.com.buono.teamControl.dto;
 
+import lombok.Data;
+
+import java.time.Instant;
+
+@Data
 public class TeamDto {
 
     String name;
@@ -7,4 +12,6 @@ public class TeamDto {
     String city;
 
     String modality;
+
+    Instant foundationDate;
 }

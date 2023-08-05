@@ -6,11 +6,11 @@ import org.springframework.scheduling.annotation.Scheduled;
 
 import java.time.Instant;
 
-//@Configuration
-//@EnableScheduling
+@Configuration
+@EnableScheduling
 public class NotificationConfig {
 
-    //@Scheduled(fixedDelay = 1000)
+    @Scheduled(fixedDelay = 10000)
     private void processNotification(){
         System.out.println("Date now"+ Instant.now());
     }
